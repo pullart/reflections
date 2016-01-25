@@ -4,3 +4,18 @@ I'm assuming a baseline is established to create a snapshot of what each file an
 
 2) How is the staging area different from the working directory and the repository? What value do you think it offers?
 WD can have additional files not lined up for commits. STAG allows us to check in limited, logical entities to the repo.
+
+3) How can you use the staging area to make sure you have one commit per logical change?
+Commit picks only changes from the staging area, so I can make sure that changes corresponding to only one logical entity are in the staging area at a time.
+
+4) What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Branches can be used for new, experimental feature development without affecting the main branch in cases like bug fixes.
+
+5) How do the diagrams help you visualize the branch structure?
+They provide a visual understanding of what checkins are where and help decide which branch to work on.
+
+6) What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+Distinct functionality from 2 different branches can now safely co-exist. Diagrams are good to visualize when a branch was formed and when it stops being relevant.
+
+7) What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Avoids human error - I'm not best equipped to evaluate another persoms code. Con - results in conflicts. Git doesn't understand code semantics.
