@@ -1,0 +1,6 @@
+1) What happens when you initialize a repository? Why do you need to do it?
+
+I'm assuming a baseline is established to create a snapshot of what each file and folder looks like. It'll then be useful for future historical referencing.
+
+2) How is the staging area different from the working directory and the repository? What value do you think it offers?
+WD can have additional files not lined up for commits. STAG allows us to check in limited, logical entities to the repo.
